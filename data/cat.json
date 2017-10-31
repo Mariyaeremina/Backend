@@ -1,0 +1,5 @@
+[{"id":"1", "name":"BlackCat", "image":"BlackCat.jpg", "power":"4", "speed":"30"},
+  {"id":"2", "name":"SmallBlackCat", "image":"SmallBlackCat.jpg", "power":"2", "speed":"20"},
+  {"id":"3", "name":"WhiteCat", "image":"WhiteCat.jpg", "power":"1", "speed":"50"},
+  {"id":"4", "name":"BigWhiteCat", "image":"BigWhiteCat.jpg", "power":"5", "speed":"40"},
+  {"id":"5", "name":"RedCat", "image":"RedCat.jpg", "power":"3", "speed":"10"}]

@@ -6,14 +6,14 @@ class App{
 	private $controller='index';
 	// действие по умолчанию
 	private $action='index';
-	// 
+	//
 	private $request=array();
-	private $responce=array();	
+	private $response=array();
 
 
 	// метод вызывающийся при создании класса
 	public function __construct(){
-		
+
 		// определяем контроллер
 		if(isset($_GET['controller'])){
 			$this->controller=$_GET['controller'];
@@ -67,11 +67,16 @@ class App{
 			// выполняем действие в контроллере
 			$controllerInstanse->$action($this->request);
 			// получаем результат
-			$this->responce=$controllerInstanse->getResponce();
+			$this->response=$controllerInstanse->getResponse();
 		}else{
-			$this->responce=false;
+			$this->response=false;
 		}
+        if ($this->controller != "index")
+        {
+            header('Content-Type: application/json');
+            $this->response = json_encode($this->response);
+        }
 		// возвращяем результат
-		return $this->responce;
+		return $this->response;
 	}
 }

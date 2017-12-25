@@ -1,0 +1,98 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.header {
+  background-color: #87ceeb;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  margin: 6px 0 0 50px;
+  float: left;
+}
+.main-menu li {
+  display: inline-block;
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 14pt;
+  border: 1px solid darkgrey;
+}
+.selected_item {
+  background-color: white;
+}
+.main-menu {
+  display:inline-block;
+  float: right;
+  margin-right: 50px;
+  margin-top: -5px;
+}
+
+.start{
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.toplist{
+  background: url(../../CatchPony/images/back-top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1200px 1250px;
+}
+.startbutton {
+  display: block;
+  text-align: center;
+  width: 170px;
+	margin: 250px auto;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #87ceeb;
+  border: 4px solid darkgrey;
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.about .info{
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.about .info p{
+  text-align: justify;
+}
+.about .info img{
+  width: 500px;
+  height: 100px;
+}
+.top{
+  max-width: 80%;
+  margin-top: 60px;
+  margin-left: 250px;
+  font-size: 18pt;
+}
+.game {
+  margin: 5%;
+  background-color: #353535;
+  padding: 4% 5%;
+  font-size: large;
+  height: 500px;
+}
+
+.cat {
+  width: 50px;
+  height: 50px;
+}
+
+.image-cat {
+  width: 100%;
+}
